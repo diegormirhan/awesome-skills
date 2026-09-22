@@ -18,8 +18,10 @@ metadata:
 
 # Just Enough Engineering
 
-Make the result easier to understand, change, operate, and remove. Optimize for
-the smallest sufficient solution, not the fewest lines or the cleverest design.
+Just Enough Engineering helps AI coding agents build and explain software with
+only the complexity each task requires. It applies to code, documentation,
+repository research, integrations, architecture, and agent workflows, keeping
+the result clear and maintainable while preserving behavior, safety, and quality.
 
 ## Core standard
 
