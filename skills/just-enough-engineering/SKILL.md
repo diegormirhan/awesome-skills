@@ -10,6 +10,10 @@ description: >-
   remove boilerplate, avoid unnecessary abstractions, or find the smallest
   sufficient solution. Do not use to remove essential complexity or explicit
   requirements merely to make an artifact shorter.
+metadata:
+  summary: >-
+    Choose the smallest sufficient solution across code, documentation,
+    integrations, and agent workflows without sacrificing essential quality.
 ---
 
 # Just Enough Engineering

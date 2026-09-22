@@ -4,6 +4,13 @@ A practical collection of reusable skills for AI coding agents. The repository
 focuses on software engineering, interface design, documentation, research, and
 agent workflows.
 
+## Summary
+
+This collection helps agents produce clear, maintainable results with only the
+complexity the task actually requires. It includes reusable guidance for code,
+design, documentation, research, RAG, repository contribution, and agent
+workflows.
+
 ## Just Enough Engineering
 
 [`just-enough-engineering`](./skills/just-enough-engineering/SKILL.md) reduces
