@@ -1,104 +1,49 @@
 # Awesome Skills
 
-A practical collection of reusable skills for AI coding agents. The repository
-focuses on software engineering, interface design, documentation, research, and
-agent workflows.
+A curated collection of reusable skills for AI agents working on software, design, documentation, and research. Install the skills you need and give your agent focused guidance for the task at hand.
 
-## Summary
+Browse the collection on [skills.sh](https://www.skills.sh/diegormirhan/awesome-skills).
 
-This collection helps agents produce clear, maintainable results with only the
-complexity the task actually requires. It includes reusable guidance for code,
-design, documentation, research, RAG, repository contribution, and agent
-workflows.
+## Get started
 
-## Just Enough Engineering
-
-[`just-enough-engineering`](./skills/just-enough-engineering/SKILL.md) reduces
-accidental complexity across code, documentation, repository exploration,
-integrations, MCPs, agent graphs, loops, and architecture while preserving
-required behavior and essential safeguards.
-
-It expands the useful behavior-preserving idea behind Brian Lovin's
-[`simplify`](https://www.skills.sh/brianlovin/agent-config/simplify) skill into a
-language-agnostic, artifact-agnostic method for choosing the smallest sufficient
-solution. Its instructions are independently written and avoid the original's
-project-specific React and TypeScript conventions.
-
-## Install
-
-Replace `<owner>` with the GitHub account or organization that hosts this
-repository:
+With Node.js available, use the [skills CLI](https://www.skills.sh/docs) to explore the collection:
 
 ```bash
-npx skills add <owner>/awesome-skills --skill just-enough-engineering
+npx skills add diegormirhan/awesome-skills --list
 ```
 
-List all discoverable skills before installing:
+Install a specific skill:
 
 ```bash
-npx skills add <owner>/awesome-skills --list
+npx skills add diegormirhan/awesome-skills --skill just-enough-engineering
 ```
 
-## Included skills
+Or run `npx skills add diegormirhan/awesome-skills` to choose skills interactively. The CLI will prompt you to select an agent and installation scope.
 
-| Skill | Purpose |
+## Featured: Just Enough Engineering
+
+[Just Enough Engineering](./skills/just-enough-engineering/SKILL.md) helps AI coding agents build and explain software with only the complexity each task requires. Use it to trim redundant code, documentation, repository research, integrations, MCP servers, agent graphs, loops, or architecture without losing required behavior, safety, or quality.
+
+It builds on the idea behind Brian Lovin's [simplify](https://www.skills.sh/brianlovin/agent-config/simplify) skill, with independently written guidance that applies beyond a specific language or framework.
+
+## Skills
+
+| Skill | What it helps with |
 | --- | --- |
-| `animate` | Design and implement purposeful interface motion. |
-| `apple-design` | Apply Apple-inspired interface and motion principles to the web. |
-| `beautiful-article` | Turn source material into a shareable single-file visual article. |
-| `clean-code` | Write and refactor readable, maintainable code. |
-| `create-readme` | Create a concise, useful project README. |
-| `find-skills` | Discover and install skills from the open ecosystem. |
-| `git-commit` | Stage changes and create conventional commits. |
-| `grill-me` | Stress-test a plan or design through focused questioning. |
-| `hallmark` | Build and review interfaces while avoiding generic AI aesthetics. |
-| `impeccable` | Design, critique, and polish frontend interfaces. |
-| `just-enough-engineering` | Reduce accidental complexity without removing essential quality. |
-| `make-repo-contribution` | Follow repository-specific contribution rules. |
-| `rag-implementation` | Plan and implement retrieval-augmented generation systems. |
-| `skill-creator` | Create, evaluate, and improve agent skills. |
-| `svg-logo-designer` | Design professional SVG logos and variations. |
+| [animate](./skills/animate/SKILL.md) | Build purposeful interface animations. |
+| [apple-design](./skills/apple-design/SKILL.md) | Apply Apple's interface and motion principles to the web. |
+| [beautiful-article](./skills/beautiful-article/SKILL.md) | Turn source material into a shareable, single-file HTML article. |
+| [clean-code](./skills/clean-code/SKILL.md) | Write, review, and refactor maintainable code. |
+| [create-readme](./skills/create-readme/SKILL.md) | Write a clear project README. |
+| [find-skills](./skills/find-skills/SKILL.md) | Discover installable skills. |
+| [git-commit](./skills/git-commit/SKILL.md) | Stage changes and write conventional commits. |
+| [grill-me](./skills/grill-me/SKILL.md) | Challenge a plan or design through focused questions. |
+| [hallmark](./skills/hallmark/SKILL.md) | Build and review interfaces without generic AI aesthetics. |
+| [impeccable](./skills/impeccable/SKILL.md) | Design, critique, and polish frontend interfaces. |
+| [just-enough-engineering](./skills/just-enough-engineering/SKILL.md) | Choose the smallest sufficient solution without sacrificing essential quality. |
+| [make-repo-contribution](./skills/make-repo-contribution/SKILL.md) | Follow a repository's contribution rules. |
+| [rag-implementation](./skills/rag-implementation/SKILL.md) | Plan and implement retrieval-augmented generation. |
+| [skill-creator](./skills/skill-creator/SKILL.md) | Create, evaluate, and improve agent skills. |
+| [svg-logo-designer](./skills/svg-logo-designer/SKILL.md) | Create scalable SVG logos and variations. |
 
-## Repository layout
-
-```text
-awesome-skills/
-└── skills/
-    ├── just-enough-engineering/
-    │   ├── SKILL.md
-    │   └── evals/
-    │       └── evals.json
-    └── <skill>/
-        └── SKILL.md
-```
-
-Each skill is a directory containing a `SKILL.md` with `name` and `description`
-frontmatter. Supporting scripts, references, assets, or evaluations are included
-only when they add concrete value.
-
-## Publish on skills.sh
-
-There is no separate registry submission command. To make the collection
-discoverable:
-
-1. Publish this repository publicly on GitHub.
-2. Run the install command above at least once.
-3. Visit `https://skills.sh/<owner>/awesome-skills/just-enough-engineering`
-   after indexing.
-
-skills.sh derives discovery and rankings from anonymous installation telemetry.
-See the official [skills.sh documentation](https://www.skills.sh/docs) and the
-[Agent Skills specification](https://agentskills.io/specification) for current
-format and publishing requirements.
-
-## Local validation
-
-Validate a skill with the reference implementation before publishing:
-
-```bash
-skills-ref validate ./skills/just-enough-engineering
-```
-
-The draft evaluation prompts are in
-[`skills/just-enough-engineering/evals/evals.json`](./skills/just-enough-engineering/evals/evals.json).
-They cover code, documentation, and agent-workflow simplification.
+Each directory in [`skills/`](./skills) contains a `SKILL.md` with its instructions. Some skills also include supporting files, such as references, scripts, or evaluations. Browse a skill's files before installing it to see exactly what it does.
