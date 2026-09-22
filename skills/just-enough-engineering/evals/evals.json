@@ -1,0 +1,23 @@
+{
+  "skill_name": "just-enough-engineering",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Review the new notification feature in this TypeScript repository. It currently adds an interface, abstract base class, factory, registry, provider adapter, repository wrapper, and event bus, but only sends one email through the existing mail client. Simplify the implementation without changing behavior and explain only the decisions that matter.",
+      "expected_output": "A behavior-preserving, repository-aware simplification that removes speculative layers, reuses the existing mail client, keeps justified error handling and tests, and reports the result concisely.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I need a short onboarding guide for a repo with a web app and API. The current draft repeats setup in three files, documents every folder, includes two architecture diagrams, and has a 25-step happy path. Rewrite the documentation plan so a new developer can run the project and find deeper details without losing required prerequisites or troubleshooting.",
+      "expected_output": "A concise, progressive onboarding structure with one canonical quick start, preserved prerequisites and recovery guidance, links to deeper material, and removal of repeated or low-value narration.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Design an agent workflow that researches a repository and answers where authentication is enforced. A proposal uses six agents, a planning graph, shared vector memory, an MCP wrapper around local file search, three critique loops, and a report generator. We need a reliable answer with file-level evidence, not a platform. Propose the smallest sufficient workflow and say when extra machinery would become justified.",
+      "expected_output": "A bounded repository-research workflow that starts from direct search and traceable file evidence, avoids unnecessary agents, MCPs, memory, and loops, and gives concrete conditions for adding complexity later.",
+      "files": []
+    }
+  ]
+}
